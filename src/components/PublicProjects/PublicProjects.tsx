@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   LuAlarmClock,
@@ -76,7 +76,7 @@ const PublicProjects = () => {
       description:
         "Task Management App is a mobile solution built with Android Studio to help users organize and track their daily tasks efficiently. It includes secure authentication with sign-up, login, and enables adding, editing, deleting, and searching tasks by priority (High, Medium, Low). Users receive smart notifications and customizable reminders, while “Today’s Tasks” highlights urgent items with intuitive icons and actions. The app supports dark/light modes, and profile management, delivering a polished and accessible experience. Powered by SQLite, Shared Preferences, and REST API integration.",
       tools: ["Android Studio", "Java", "XML", "SQLite", "REST API"],
-      image: {taskApp},
+      image: taskApp,
       github:
         "https://github.com/lamaNase/Android-Laboratory-Project/tree/main",
     },
@@ -87,7 +87,7 @@ const PublicProjects = () => {
       description:
         "Tafawq Quiz App is an interactive, Arabic-language educational web app built with the powerful Remix framework. It is deployed on Netlify and uses Firebase for backend data storage, including user sessions, question content, and progress tracking. The app features full user authentication (sign up/sign in), utilizes cookies for managing user sessions, and supports dynamic question status updates. Users can practice multiple-choice questions, receive immediate feedback, view detailed answer explanations, and monitor their scores — all within a culturally adapted, right-to-left (RTL) interface tailored for Arabic-speaking learners.",
       tools: ["Remix", "TypeScript", "CSS", "Firebase", "Node.js", "Netlify"],
-      image: {quizApp},
+      image: quizApp,
       github: "https://github.com/lamaNase/auth-quiz-ranker",
     },
     {
@@ -97,7 +97,7 @@ const PublicProjects = () => {
       description:
         "Real-time automotive data visualization system designed to provide synchronized overview of a vehicle’s performance and surroundings. The system integrates data from multiple sensors, including cameras, GPS, IMU, speed, steering, throttle, and brake inputs, to deliver a unified real-time display of both visual and numerical insights. It features an intuitive interface that renders synchronized multi-camera views alongside continuously updated telemetry readings. A built-in interactive map, powered by Google Maps APIs, visualizes the vehicle’s current position and trajectory in real time. The system’s multi-threaded architecture ensures smooth data streaming, efficient sensor synchronization, and high-performance visualization making it a robust platform for monitoring, analysis, and research in automotive environments.",
       tools: ["C++", "Qt", "CMake", "Software architectur", "Multithreading"],
-      image: {dataViz},
+      image: dataViz,
       github: "https://github.com/lamaNase/AutoDataViz",
     },
     {
@@ -116,7 +116,7 @@ const PublicProjects = () => {
         "Graph-based algorithms",
         "Netlify",
       ],
-      image: {arabicSummarizer},
+      image: arabicSummarizer,
       github:
         "https://github.com/lamaNase/Enhancing-Extractive-Graph-Based-Arabic-Text-Summarization",
     },
