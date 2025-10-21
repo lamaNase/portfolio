@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("${import.meta.env.BASE_URL}assets/background.jpeg");
+  background-image: url("./assets/background.jpeg");
   background-size: cover;          /* Ensures it covers the whole screen */
   background-repeat: no-repeat;    /* Prevents tiling */
   background-attachment: fixed;    /* Keeps it in place while scrolling */
