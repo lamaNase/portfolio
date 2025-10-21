@@ -3,6 +3,7 @@ import TypingLoop from "./TypingLoop"
 import { FaThumbtack } from "react-icons/fa"
 import SocialLinks from "./SocialLinks"
 import ContactInfo from "../ContactInfo/ContactInfo"
+import myPic from "./my_picture.png";
 import "./Header.css";
 
 export default function Header() {
@@ -16,7 +17,7 @@ export default function Header() {
         >
             <div className="header-content">
                 <div className="profile-pic">
-                    <img src="../../assets/my_picture.png" alt="Lama Naser" />
+                    <img src={myPic} alt="Lama Naser" />
                 </div>
                 <div className="header-info">
                     <TypingLoop text="Hi, I'm Lama Naser" />
