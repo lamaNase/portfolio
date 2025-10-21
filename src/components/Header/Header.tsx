@@ -16,7 +16,7 @@ export default function Header() {
         >
             <div className="header-content">
                 <div className="profile-pic">
-                    <img src="/assets/my_picture.png" alt="Lama Naser" />
+                    <img src="${import.meta.env.BASE_URL}assets/my_picture.png" alt="Lama Naser" />
                 </div>
                 <div className="header-info">
                     <TypingLoop text="Hi, I'm Lama Naser" />
