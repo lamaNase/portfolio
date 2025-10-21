@@ -4,7 +4,6 @@
   align-items: flex-start;
   justify-content: space-between;
   color: #fff;
-  flex-wrap: wrap;
 }
 
 .about-left {
@@ -34,4 +33,11 @@
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
