@@ -1,0 +1,214 @@
+.experience-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* ======== EXPERIENCE CARDS ======== */
+.experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.experience-card {
+  position: relative;
+  width: 40%;
+  padding: 30px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
+
+.experience-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.role {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgb(216, 214, 214);
+}
+
+/* ======== BACKGROUND CIRCLES ======== */
+.circle-bg {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  filter: blur(50px);
+  z-index: 0;
+}
+
+.circle-top {
+  width: 120px;
+  height: 120px;
+  top: -40px;
+  right: -30px;
+}
+
+.circle-bottom {
+  width: 160px;
+  height: 160px;
+  bottom: -50px;
+  left: -40px;
+}
+
+/* Bring text above the circles */
+.experience-card h3,
+.role,
+.duration,
+.description {
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================== */
+/* 📱 RESPONSIVE DESIGN BELOW */
+/* ========================== */
+
+/* Large tablets */
+@media (max-width: 1200px) {
+  .experience-card {
+    width: 45%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .experience-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .experience-card {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .experience-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .duration {
+    font-size: 0.85rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .circle-top {
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    right: -20px;
+  }
+
+  .circle-bottom {
+    width: 130px;
+    height: 130px;
+    bottom: -40px;
+    left: -30px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .experience-card {
+    padding: 18px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .role {
+    font-size: 0.95rem;
+  }
+
+  .duration {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .circle-top {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle-bottom {
+    width: 100px;
+    height: 100px;
+  }
+}

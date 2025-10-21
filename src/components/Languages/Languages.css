@@ -1,0 +1,215 @@
+.languages-section {
+  width: 100%;
+  align-self: center;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.languages-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.languages-title .underline {
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #3b82f6;
+  margin: 10px auto 0;
+  border-radius: 5px;
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100px;
+    opacity: 1;
+  }
+}
+
+/* ========================== */
+/* GRID LAYOUT                */
+/* ========================== */
+
+.languages-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.language-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+/* ========================== */
+/* CIRCLE DESIGN              */
+/* ========================== */
+
+.circle-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.progress-ring__background {
+  fill: none;
+  stroke: #2b2b3a;
+  stroke-width: 10;
+}
+
+.progress-ring__progress {
+  fill: none;
+  stroke: #3b82f6;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 440;
+  transition: stroke-dashoffset 1s ease;
+  filter: drop-shadow(0 0 8px #3b82f6);
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.circle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level {
+  font-size: 1.1rem;
+  color: #3b82f6;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in;
+}
+
+.language-name {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ========================== */
+/* ANIMATIONS                 */
+/* ========================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px #3b82f6);
+    stroke-width: 10;
+  }
+  50% {
+    filter: drop-shadow(0 0 16px #3b82f6);
+    stroke-width: 11;
+  }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1.4); }
+  50% { transform: scale(1.05); }
+}
+
+/* ========================== */
+/* 📱 RESPONSIVE DESIGN BELOW */
+/* ========================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .languages-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .languages-grid {
+    gap: 2.5rem;
+    justify-content: center;
+  }
+
+  .circle-container {
+    width: 90px;
+    height: 90px;
+  }
+
+  .level {
+    font-size: 1rem;
+  }
+
+  .language-name {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .languages-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .languages-title {
+    font-size: 1.8rem;
+  }
+
+  .circle-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .level {
+    font-size: 0.95rem;
+  }
+
+  .language-name {
+    font-size: 1rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .languages-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .languages-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .circle-container {
+    width: 70px;
+    height: 70px;
+  }
+
+  .level {
+    font-size: 0.85rem;
+  }
+
+  .language-name {
+    font-size: 0.9rem;
+  }
+}
